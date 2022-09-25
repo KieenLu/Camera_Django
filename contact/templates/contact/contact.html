@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Camera AI | Contact</title>
+    {% load static %}
+    <Link rel="stylesheet" href="{%static '/css/contact.css'%}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" id="header">
+    <div class="container">
+      <a href="http://127.0.0.1:8000/home" class="navbar-brand">
+        <img id="main-logo" src="{% static '/Picture/logo.png' %}" height="45">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Trang chủ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/price">Bảng giá</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Đại lý</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/API" target="_blank">
+              API
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCAt5uHvm5r71kxgm3SYyoPw" target="_blank">
+              Hướng dẫn
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/contact">Liên hệ
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<main>
+    <div class="container">
+        <div class="contact">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-title">LIÊN HỆ</div>
+                    <img src="{% static '/Picture/contact.png' %}" alt="">
+                </div>
+                <div class="col-md-4 form-container">
+                    <form method="post" id="contactForm" novalidate="">
+              <div class="row">
+                <div class="form-group">
+                  <label for="staticName" class="">Họ tên *</label>
+                  <input name="fullName" id="fullName" type="text" class="form-control" required="">
+                </div>
+                <div class="form-group">
+                  <label for="staticPhone" class="">Số điện thoại*</label>
+                  <input name="phone" id="phone" type="number" class="form-control" required="">
+                </div>
+                <div class="form-group">
+                  <label for="staticEmail">Email*</label>
+                  <input name="email" id="email" type="email" class="form-control" required="">
+                </div>
+                <div class="form-group">
+                  <label for="staticName">Tên doanh nghiệp</label>
+                  <input name="companyName" id="companyName" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="staticAddress">Địa chỉ</label>
+                  <input name="address" id="address" type="text" class="form-control">
+                </div>
+                <fieldset class="form-group">
+                  <label>Nhu cầu</label>
+                  <div class="demand">
+                    <input id="chooseInfo1" name="chooseInfo" type="radio" value="0">
+                    <label class="form-check-label" for="chooseInfo1">
+                      Chấm công
+                    </label>
+
+                    <input id="chooseInfo2" name="chooseInfo" type="radio" value="1">
+                    <label class="form-check-label" for="chooseInfo2">
+                      Nhận diện khách hàng
+                    </label>
+
+                    <input id="chooseInfo3" name="chooseInfo" type="radio" value="2">
+                    <label class="form-check-label" for="chooseInfo3">
+                      Cả hai
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="require-content">
+                Những nội dung có dấu * là bắt buộc nhập
+              </div>
+
+              <button id="btn-submit" class="btn btn-primary" type="submit">
+                <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+
+                <span id="buttonText">GỬI</span>
+              </button>
+            </form>
+                    <div id="success" class="d-none">
+              <div class="box-success">
+                <div class="alert alert-success text-center" role="alert">
+                  Thông tin của bạn đã được gửi đi!
+                </div>
+                <button type="button" class="btn btn-primary d-block mx-auto" id="btn-back">
+                  Quay về
+                </button>
+              </div>
+            </div>
+                </div>
+                <div class="col-md-4 address-container">
+                    <div class="title-address">CAMERA AI</div>
+                      <div class="list-address">
+                      <div>
+                        <div class="address-name">Sinh viên thực hiên : Lư Trung Kiên </div>
+                        <div class="mb-3 mt-1">
+                          MSSV : 1800549
+                          <br>
+                          Lớp : CDT0118
+                        </div>
+                      </div>
+<!--                      <div>-->
+<!--                        <div class="address-name">VĂN PHÒNG CAMERA AI haii</div>-->
+<!--                        <div class="mb-3 mt-1">-->
+<!--                          Địa chỉ văn phòng 2-->
+<!--                        </div>-->
+<!--                        <div>bb</div>-->
+<!--                      </div>-->
+
+<!--                      <div>-->
+<!--                        <div class="address-name">VĂN PHÒNG CAMERA AI baa</div>-->
+<!--                        <div class="mb-3 mt-1">-->
+<!--                          Địa chỉ văn phòng 3-->
+<!--                        </div>-->
+<!--                        <div>cc</div>-->
+<!--                      </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-contact">
+            <div class="title">HỖ TRỢ THÊM</div>
+            <div class="row mt-3">
+              <div class="col-md-4">
+                <a class="bounder" href="tel:0982818401">
+                  <div class="d-flex align-items-center">
+                    <img src="{% static '/Picture/call-icon.jpg' %}">
+                    0982818401
+                  </div>
+
+                  <button class="btn btn-primary">GỌI</button>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <div class="bounder">
+                  <div class="d-flex align-items-center">
+                    <img src="{% static '/Picture/mess-icon.png' %}">
+                    Nhắn tin 24/7
+                  </div>
+
+                  <button class="btn btn-primary" id="message">NHẮN</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="bounder">
+                  <div class="d-flex align-items-center">
+                    <img src="{% static '/Picture/email-icon.png' %}">
+                    Email
+                  </div>
+
+                  <button class="btn btn-primary" id="send">GỬI</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</main>
+<a class="hotline" href="tel:0982818401" classname = "call-icon">
+    <img src="{% static 'Picture/call-icon.jpg' %}" alt="">
+</a>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</html>

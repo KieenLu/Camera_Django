@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Camera AI | Price</title>
+      {%load static%}
+    <Link rel="stylesheet" href="{%static '/css/price.css'%}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" id="header">
+    <div class="container">
+      <a href="http://127.0.0.1:8000/home" class="navbar-brand">
+        <img id="main-logo" src="{% static '/Picture/logo.png' %}" height="45">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Trang chủ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/price">Bảng giá</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Đại lý</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/API" target="_blank">
+              API
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCAt5uHvm5r71kxgm3SYyoPw" target="_blank">
+              Hướng dẫn
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/contact">Liên hệ
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="banner banner2">
+      <div class="container">
+        <div class="banner-box">
+          <div class="title-banner">BẢNG GIÁ SẢN PHẨM VÀ DỊCH VỤ</div>
+          <img class="img-banner" src=" {% static '/Picture/title-banner.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- BOX 1 -->
+    <div class="box" style="margin-bottom :50px;">
+      <div class="container">
+        <div class="title">
+          <h1>GIÁ SẢN PHẨM AI CAMERA</h1>
+        </div>
+        <div class="box-info">
+          <div class="title-info">AI CAMERA</div>
+          <p>Giá sản phẩm: <strong> xxx </strong></p>
+          <p>Bảo hành: 12 tháng.</p>
+          <p>Lắp ráp tại Việt Nam.</p>
+          <button type="button" class="btn btn-primary btn-modal" data-toggle="modal" data-target="#exampleModal">
+            Đặt hàng
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOX2 -->
+    <div class="box" style="margin-bottom: 50px">
+      <div class="container">
+        <div class="title">
+          <h1>
+            GIÁ DỊCH VỤ HÀNG THÁNG <span>(*Áp dụng cho camera đầu tiên)</span>
+          </h1>
+        </div>
+
+        <!--  -->
+        <div class="lst-dep lst-cus">
+          <div class="row">
+            <div class="col-md-3">
+              <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Free</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="free">Miễn phí</div>
+                      <p>Hàng tháng</p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>FaceID</p>
+                        <p>15</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Lưu trữ video</p>
+                        <p>1 ngày</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Lưu trữ hình ảnh</p>
+                        <p>3 tháng</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Báo động trên camera</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Gọi điện báo động</p>
+                        <p>Không</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Hỗ trợ API</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Báo cáo chấm công</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-3">
+              <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Plus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="free">140.000đ</div>
+                      <p>Hàng tháng</p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>FaceID</p>
+                        <p>50</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Lưu trữ video</p>
+                        <p>35 ngày</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Lưu trữ hình ảnh</p>
+                        <p>12 tháng</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Báo động trên camera</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Gọi điện báo động</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Hỗ trợ API</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Báo cáo chấm công</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-3">
+              <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Pro</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="free">280.000đ</div>
+                      <p>Hàng tháng</p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>FaceID</p>
+                        <p>500</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Lưu trữ video</p>
+                        <p>35 ngày</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Lưu trữ hình ảnh</p>
+                        <p>12 tháng</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Báo động trên camera</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Gọi điện báo động</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Hỗ trợ API</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Báo cáo chấm công</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-3">
+              <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Business</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="free">550.000đ</div>
+                      <p>Hàng tháng</p>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>FaceID</p>
+                        <p>50.000</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Lưu trữ video</p>
+                        <p>35 ngày</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Lưu trữ hình ảnh</p>
+                        <p>12 tháng</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Báo động trên camera</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Gọi điện báo động</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Hỗ trợ API</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="
+                            item
+                            d-flex
+                            justify-content-between
+                            align-content-center
+                          ">
+                        <p>Báo cáo chấm công</p>
+                        <p>Có</p>
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--    BOX3-->
+    <div class="box" style="margin-bottom : 50px;">
+      <div class="container">
+        <div class="title">
+          <h1>DỊCH VỤ THÊM</h1>
+        </div>
+
+<!--        <div class="row-info">-->
+<!--          <div class="info">Cloud35</div>-->
+<!--          <div class="price">110.000đ</div>-->
+<!--          <div class="explain">-->
+<!--            <span>-->
+<!--              Ưu đãi dành cho các camera phụ, chỉ phải trả phí lưu trữ.</span>-->
+<!--            Được đồng bộ FaceID chung với camera đầu tiên và có 35 ngày lưu-->
+<!--            trữ trên cloud-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="row-info mt-2">-->
+<!--          <div class="info">FaceID</div>-->
+<!--          <div class="price">50.000đ</div>-->
+<!--          <div class="explain">Gói bổ sung thêm <span>50 FaceID</span></div>-->
+<!--        </div>-->
+      </div>
+    </div>
+    <!--BOX 4-->
+    <div class="box">
+      <div class="container">
+        <div class="title">
+          <h1>CÂU HỎI THƯỜNG GẶP</h1>
+        </div>
+
+        <div class="lst-qestion">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Nếu tôi thanh toán dịch vụ 1 năm thì có được giảm giá?
+              </div>
+              <p>
+                Chúng tôi có chương trình ưu đãi khi thanh toán dài hạn, cụ
+                thể:
+              </p>
+              <p>Thanh toán 1 năm được miễn phí 2 tháng.</p>
+              <p>Thanh toán 6 tháng được giảm 10%.</p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Tôi có 40 nhân viên, tôi nên lắp mấy camera và phí dịch vụ thế
+                nào?
+              </div>
+              <p>
+                Giải pháp của chúng tôi sẽ phát huy hết thế mạnh nếu bạn lắp 2
+                camera trở lên. 1 chiếc hướng vào, 1 chiếc hướng ra. Để nhân
+                viên đi làm không cần nhớ chấm công. Nhân viên đi ra ngoài bao
+                nhiêu lần, mỗi lần cách nhau bao nhiêu lâu đều có báo cáo.
+              </p>
+              <strong>Dự toán: </strong>
+              <p>01 gói dịch vụ Plus cho camera chính: 140k/tháng</p>
+              <p>01 gói Cloud 35 ngày cho camera phụ: 110k/tháng</p>
+              <p>
+                Thanh toán 1 năm tổng cộng: 9.500k. Các năm sau gia hạn 2.500k
+                1 năm.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Camera này có kiêm thiết bị an ninh không?
+              </div>
+              <p>
+                Ai Camera kiêm thiết bị an ninh bảo vệ gia đình, doanh
+                nghiệp của bạn. Bạn có thể thiết lập thời gian an ninh cho
+                camera.
+              </p>
+              <p>
+                Ví dụ: từ 11h đêm đến 6 giờ sáng, nếu camera phát hiện có hình
+                dáng người, camera sẽ phát ra âm thanh yêu cầu người đó đến
+                gần để nhận diện khuôn mặt. Nếu trong thời gian 20 giây mà
+                không nhận diện ra được người hợp được phép, camera sẽ phát âm
+                thanh báo động. Âm lượng rất lớn vì camera được trang bị 1 loa
+                công suất lớn, đồng thời gọi điện cảnh báo cho tất cả các
+                thành viên trên APP Connect.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Tôi có nhiều chi nhánh, thì phải trả phí dịch vụ thế nào?
+              </div>
+              <p>
+                Camera AI tính phí FaceID theo từng địa điểm, tương đương với chi
+                nhánh, toà nhà... Nếu bạn có nhiều chi nhánh thì mỗi chi nhánh
+                phải mua gói dịch vụ riêng, mỗi camera cũng đều phải trả phí
+                thì mới có thể đồng bộ dữ liệu cho nhau.
+              </p>
+              <p>
+                Nếu các chi nhánh của bạn số lượng nhân viên dưới 15 người thì
+                có thể dùng gói miễn phí, và có 1 ngày lưu trữ video.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Vị trí lắp đặt thế nào là tối ưu nhất?
+              </div>
+              <p>
+                Nên lắp chính diện cửa ra vào, nơi nhân viên thường đi qua.
+                Chiều cao không nên vượt quá 2.2 mét, lý tưởng là ở độ cao từ
+                1.5 - 2 mét. Camera có thể nhận dạng từ khoảng cách xa nhất là
+                4 mét. Góc nghiêng có thể nhận diện từ trên-dưới, phải-trái là
+                35 độ.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Nhân viên ra vào liên tục, vậy sẽ xuất báo cáo chấm công thế
+                nào?
+              </div>
+              <p>
+                Khi bạn muốn xuất báo cáo chấm công, bạn thao tác trên APP và
+                nhận email file báo cáo định dạng excel, trong file báo cáo
+                này chúng tôi thể hiện giờ xuất hiện đầu tiên hàng ngày, và
+                giờ xuất hiện cuối cùng để làm cơ sở chấm công.
+              </p>
+              <p>
+                Nếu bạn muốn xem chi tiết lịch sử ra vào của 1 nhân viên thì
+                bạn có thể xem trên APP Connect, có thể lại xem video
+                đúng thời điểm nhân viên đó xuất hiện
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Vì sao đeo khẩu trang vẫn có thể nhận diện?
+              </div>
+              <p>
+                Chúng tôi lấy các vùng đặc điểm trên khuôn mặt để tạo thành
+                đặc điểm riêng của từng người, nếu phần mũi và miệng bị che
+                thì sẽ lấy cụm mắt, lông mày, chán... để nhận diện.
+              </p>
+              <p>
+                Nếu phần mắt bị che bởi kính râm, thì sẽ sử dụng cụm bên dưới
+                gồm: mũi, nhân trung, miệng... để làm đặc điểm nhận dạng.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Khi internet bị gián đoạn thì nhận diện được không?
+              </div>
+              <p>
+                Ai Camera có thể hoạt động độc lập mà không cần đến internet,
+                nên khi internet bị gián đoạn, Ai Camera vẫn nhận diện bình
+                thường, khi có internet trở lại thì sẽ đồng bộ dữ liệu lên
+                cloud.
+              </p>
+              <p>
+                Bên trong Ai Camera có bộ nhớ trong 8GB nên có thể lưu trữ
+                video offline từ cả ngày hoặc vài ngày tuỳ theo lượng người ra
+                vào.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Buổi tối tắt hết đèn thì có thể nhận diện không?
+              </div>
+              <p>
+                Ai Camera được trang bị 2 đèn hồng ngoại, có thể hoạt động
+                trong không gian tối. Nhưng tốc độ nhận dạng bị chậm đi, sẽ
+                mất khoảng 2 giây để nhận dạng.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Có thể dùng ảnh để lừa camera không?
+              </div>
+              <p>
+                Không thể dùng ảnh để lừa camera, vì AI Camera có thuật toán phân biệt hình ảnh, khi bạn dùng ảnh để checkin, camera sẽ phát hiện ra.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Tôi tự lưu trữ vào ổ cứng để không trả phí cloud được không?
+              </div>
+              <p>
+                Ai Camera không hỗ trợ lưu trữ cắm thẻ nhớ hoặc đầu ghi, tất
+                cả dữ liệu được lưu trữ trên cloud, vì thẻ nhớ và đầu ghi dễ
+                bị phá hỏng dữ liệu, ăn trộm... khi đó bạn sẽ không có dữ liệu
+                để truy tìm manh mối.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Có chức năng đàm thoại 2 chiều không?
+              </div>
+              <p>
+                Có, chức năng đàm thoại 2 chiều của chúng tôi thực sự rất
+                tuyệt vời, bởi vì bố trí loa công suất lớn, âm lượng của
+                Ai Camera lớn nhất trong các dòng camera trong nhà. Âm thanh
+                rõ ràng, ấm áp, bạn có thể nói vào điện thoại để phát thông
+                báo qua camera cho căn phòng 100m2.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Tôi lo lắng khi dữ liệu đặt trên cloud, liệu có an toàn?
+              </div>
+              <p>
+                Toàn bộ dữ liệu được mã hoá 2 chiều, và mã khoá nằm trong điện
+                thoại của bạn. Chỉ có bạn mới có thể xem được dữ liệu của
+                chính bạn. Chúng tôi đặt việc bảo mật dữ liệu của khách hàng
+                là việc quan trọng hàng đầu, chúng tôi cam kết bảo vệ dữ liệu
+                của khách hàng trong mọi trường hợp.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Tôi muốn trở thành đại lý
+              </div>
+              <p>
+                Chúng tôi đang tìm kiếm đại lý, đối tác trên toàn lãnh thổ
+                Việt Nam và các quốc gia khác. Nếu bạn muốn tham gia vào mạng
+                lưới của chúng tôi, hãy liên lạc với chúng tôi bằng cách để lại
+                thông tin trong mục Liên hệ.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Có thể tích hợp Ai Camera với phần mềm của bên thứ 3?
+              </div>
+              <p>
+                Hỗ trợ API để các phần mềm khác có thể kết nối vào lấy
+                dữ liệu. Tài liệu và hướng dẫn chi tiết nằm trong mục API.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="title-ques">
+                Có thể dùng Ai Camera để nhận diện khách hàng không?
+              </div>
+              <p>
+                Ai Camera hỗ trợ tối đa nhận diện 50.000 khuôn mặt, nên
+                bạn có thể sử dụng để nhận diện khách hàng. Bạn sẽ biết được
+                những khách hàng nào lâu chưa quay lại, những khách hàng
+                thường xuyên ghé thăm, và các thống kê giá trị khác.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-link" id="message">Đặt thêm câu hỏi cho chúng tôi</div>
+      </div>
+    </div>
+<!--    Footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="wrap">
+                <nav>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Android APP</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">iOS APP</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Bảng giá</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Đại lý</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Youtube</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Facebook</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Tài liệu API</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Hướng dẫn</a>
+                        </h3>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+  </main>
+  <a class="hotline" href="tel:0982818401">
+        <img src="{% static 'Picture/call-icon.jpg' %}" alt="">
+     </a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</body>
+</html>

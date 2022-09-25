@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html amp lang="en" class="fa-events-icons-ready">
+<head>
+	<title>AI Camera</title>
+    {%load static%}
+    <Link rel="stylesheet" href="{%static '/css/home.css'%}">
+</head>
+<body class="amp-mode-mouse amp-mode-keyboard-active" style="opacity: 1; visibility: visible; animation: 0s ease 0s 1 normal one running none;">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="header">
+    <div class="container">
+      <a href="http://127.0.0.1:8000/home" class="navbar-brand">
+        <img id="main-logo" src="{% static '/Picture/logo.png' %}" height="45">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Trang chủ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/price">Bảng giá</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Đại lý</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/API" target="_blank">
+              API
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCAt5uHvm5r71kxgm3SYyoPw" target="_blank">
+              Hướng dẫn
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/home/contact">Liên hệ
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="popupshowreel">
+        <div class="off-showreel" style="height: 989px; width: 1537px;">
+            <div class="container">
+                <div class="off-video-button " onclick="remove();">
+                    <i class="fas fa-times-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="showreel-video"><iframe width="700" height="500" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+    </div>
+    <h1 class="title-home">Camera thông minh</h1>
+    <h2 class="text">"Giải pháp tích hợp, cung cấp hệ thống camera thông minh sử dụng trí tuệ nhân tạo tự động nhận dạng, phát hiện sự kiện, hành vi một cách chính xác"</h2>
+    <div class="cover">
+        <a class="button-play-video" href="#" onclick="toggle();">VIDEO GIỚI THIỆU SẢN PHẨM</a>
+        <img src="{% static '/Picture/CameraAI.png' %}" class="img-center" alt="">
+        <div style="clear: both"></div>
+    </div>
+    <h2 class="text">"Ứng dụng trí tuệ nhân tạo có thể nhận dạng khuôn mặt chính xác lên đến 99,9%"
+  <br>"Hoạt động độc lập, Không cần internet"
+  </h2>
+    <div class="slide1"></div>
+    <div class="slide2">
+      <div class="columns">
+        <div class="left-slide2">
+          <img src="{% static 'Picture/NPU.jpg' %}" alt="">
+        </div>
+        <div class="right-slide2">
+          <h2 class="title-text">NPU
+            <br>
+            AI specialist
+          </h2>
+          <h3 class="article">Tăng tốc tính toán các tác vụ Machine Learning lên nhiều lần (gần 10 nghìn lần) so với GPU
+            <br>
+            <br>
+            Tiêu thụ năng lượng thấp và cải thiện việc sử dụng tài nguyên cho các tác vụ Machine Learning so với GPU và CPU
+          </h3>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    <div class="slide3">
+      <div class="columns">
+        <div class="left-slide3">
+        <h2 class="title-text">Human Recognition System</h2>
+        <h3  class="text3">
+          Hệ thống tích hợp hoàn chỉnh.
+          <br>
+          Đồng bộ thông minh giữa camera và máy chủ.
+          <br>
+          Thông tin đầy đủ về hình ảnh.
+          <br>
+          Báo động thời gian thực.
+      </h3>
+      </div>
+        <div class="right-slide3">
+          <img src="{% static 'Picture/human_system.png' %}" alt="">
+        </div>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    <div class="slide4">
+      <h2 class="text4">LƯU TRỮ AN TOÀN VÀ BẢO MẬT</h2>
+      <h3 class="text2">Giải pháp lưu trữ của chúng tôi là khác biệt, không cần sử dụng thẻ nhớ, đầu ghi hình.
+        <br>
+        Tất cả dữ liệu của bạn được lưu trên cloud và chỉ chủ nhân của thiết bị mới có quyền xoá.
+      </h3>
+      <h3 class="text2">Cách thức hoạt động này nhằm bảo vệ an toàn cho bạn,<br> tránh những tình huống thẻ nhớ, ổ
+                cứng bị hỏng hoặc bị đánh cắp.</h3>
+      <div class="security">
+        <img src="{% static 'Picture/security2.jpg' %}" alt="">
+      </div>
+    </div>
+    <div class="slide5">
+      <div class="text5">
+        <h2 class="text-1">Chấm công chính xác</h2>
+        <h3 class="text-2">Nhân viên không còn bận tâm nhớ xếp hàng chấm công mỗi ngày.<br><br> Khi kết
+                    hợp với các dịch vụ phần mềm chấm công, quản lý nhân sự khác sẽ tạo ra 1 hệ thống tự động tính toán ngày
+                    công, bảng lương nhanh chóng cho doanh nghiệp.</h3>
+      </div>
+      <div class="checkin1-image">
+        <img src="{% static 'Picture/checkin1.jpg' %}" alt="">
+      </div>
+    </div>
+    <div class="slide6">
+      <div class="text6">
+                <h2 class="text-1">Bảo vệ an toàn trẻ nhỏ</h2>
+                <h3 class="text-2">Nhờ khả năng hoạt động độc lập nên có thể lắp đặt trên xe bus, trong nhà trẻ, trường
+                    học.<br><br> Khi trẻ lên xe bus, vào lớp học thì ngay lập tức phụ huynh nhận được thông báo.<br><br> Nhà
+                    trường cũng có thể sử dụng HANET Ai Camera để kiểm
+                    soát phụ huynh đăng ký đưa đón con.</h3>
+      </div>
+      <div class="checkin2-image">
+        <img src="{% static 'Picture/checkin2.jpg' %}" alt="">
+      </div>
+    </div>
+    <div class="slide7">
+      <div class="text7">
+        <h2 class="text-1">An ninh đảm bảo</h2>
+        <h3 class="text-2">AI Camera kiểm soát an ninh bằng thuật toán phát hiện hình dáng người, loại bỏ các
+                    tình huống báo động giả.
+            <br>
+            <br> Sau khi phát hiện ra người, Ai Camera sẽ cho thời gian 20 giây để
+                    trình diện, nếu không nhận diện được chủ nhân,
+                    camera báo động bằng loa âm thanh lớn được tích hợp ngay trên camera.
+            <br>
+            <br> Đồng thời gọi điện thoại
+                    cho những thành viên trong gia đình, công ty. Đây là tính năng độc đáo trên Ai Camera, giúp người
+                    dùng yên tâm vì được bảo vệ
+                    nghiêm ngặt.</h3>
+      </div>
+      <div class="security">
+        <img src="{% static 'Picture/security.jpg' %}" alt="">
+      </div>
+    </div>
+    <div class="form">
+      <div class="container">
+        <div class="bg-inside">
+          <div class="text-form">
+            <div class="text-1">Yêu cầu tư vấn sản phẩm</div>
+          </div>
+          <form method="post" id="my-form" novalidate>
+            <div class="row">
+              <div class="col-12 col-lg-9 mx-auto">
+                <div class="form-group row">
+                                    <label for="staticName" class="col-sm-3 col-form-label text-right">*Họ và
+                                        tên:</label>
+                                    <div class="col-sm-9">
+                                        <input name="fullName" id="fullName" type="text" class="form-control" placeholder="Họ tên *" required="">
+                                    </div>
+                                </div>
+                <div class="form-group row">
+                                    <label for="staticPhone" class="col-sm-3 col-form-label text-right">*Số điện
+                                        thoại:</label>
+                                    <div class="col-sm-9">
+                                        <input name="phone" id="phone" type="text" class="form-control" placeholder="Số điện thoại *" required="">
+                                    </div>
+                                </div>
+                <div class="form-group row">
+                                    <label for="staticEmail" class="col-sm-3 col-form-label text-right">*Email:</label>
+                                    <div class="col-sm-9">
+                                        <input name="email" id="email" type="email" class="form-control" placeholder="Email *" required="">
+                                    </div>
+                                </div>
+                <div class="form-group row">
+                                    <label for="staticName" class="col-sm-3 col-form-label text-right">Tên doanh
+                                        nghiệp:</label>
+                                    <div class="col-sm-9">
+                                        <input name="companyName" id="companyName" type="text" class="form-control" placeholder="Tên doanh nghiệp">
+                                    </div>
+                                </div>
+                <div class="form-group row">
+                                    <label for="staticAddress" class="col-sm-3 col-form-label text-right">Địa chỉ:</label>
+                                    <div class="col-sm-9">
+                                        <input name="address" id="address" type="text" class="form-control" placeholder="Địa chỉ">
+                                    </div>
+                                </div>
+                <fieldset class="form-group row">
+                 <label class="col-sm-3 col-form-label text-right">Nhu cầu:</label>
+                  <div class="col-sm-9">
+                   <div class="d-flex h-100 align-items-center">
+                    <div class="form-check mr-4">
+                        <input class="form-check-input" id="chooseInfo1" name="chooseInfo" type="radio" value="0">
+                        <label class="form-check-label" for="chooseInfo1">Chấm công</label>
+                    </div>
+                    <div class="form-check mr-4">
+                        <input class="form-check-input" id="chooseInfo2" name="chooseInfo" type="radio" value="1">
+                         <label class="form-check-label" for="chooseInfo2">Nhận diện khách hàng</label>
+                    </div>
+                    <div class="form-check mr-4">
+                        <input class="form-check-input" id="chooseInfo3" name="chooseInfo" type="radio" value="2">
+                        <label class="form-check-label" for="chooseInfo3">Cả hai</label>
+                    </div>
+                   </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="text text-center">Những nội dung có dấu * là bắt buộc nhập</div>
+            <div class="wrap-login100-form-btn">
+                            <button id="btn-submit" class="btn btn-primary d-block mx-auto" type="submit">
+                                <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                                <span id="buttonText">Gửi thông tin</span>
+                            </button>
+                        </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <a class="hotline" href="tel:0982818401" classname = "call-icon">
+        <img src="{% static 'Picture/call-icon.jpg' %}" alt="">
+    </a>
+    <footer id="footer">
+        <div class="container">
+            <div class="wrap">
+                <nav>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Android APP</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">iOS APP</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Bảng giá</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Đại lý</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Youtube</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Facebook</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Tài liệu API</a>
+                        </h3>
+                    </div>
+                    <div class="listing">
+                        <h3 class="title-list">
+                            <a href="" target="_blank">Hướng dẫn</a>
+                        </h3>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript">
+        let id = 'https://www.youtube.com/embed/5njkt02Ial8'
+        const video = document.querySelector(".showreel-video iframe")
+
+        function toggle()
+        {
+            var popupshowreel = document.querySelector(".popupshowreel")
+            popupshowreel.classList.toggle("active")
+            video.src = id
+
+        }
+        function remove()
+        {
+            if (classList.contains('active'))
+            {classList.remove('active')}
+            video.src = ''
+
+        }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* header */
+#header {
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+#header .collapse {
+    color: white;
+    margin-left: auto;
+    flex-grow: unset;
+}
+#header .collapse .navbar-nav {
+    column-gap: 35px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important ;
+}
+
+
+
+
+/* banner */
+.banner img {
+    text-align: center;
+    width: 100%;
+}
+
+.banner2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.banner2 .banner-box {
+    position: relative;
+}
+
+.banner2 .banner-box .title-banner {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+}
+/*box 1*/
+.box .container {
+    width: 1180px;
+    margin-bottom: 40px;
+}
+.title h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid #dfd6d6;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.box-info .title-info {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.box-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.lst-qestion p, strong {
+    font-size: 14px;
+}
+.box-info .btn-modal {
+    width: 130px;
+    border-radius: 20px;
+    font-weight: 600;
+    background: #3bafee;
+    margin-bottom: 15px;
+    border: 0;
+}
+/*box 2*/
+.title span {
+    font-size: 14px;
+    text-transform: lowercase;
+    margin-left: 15px;
+}
+/* box 3*/
+.lst-dep table th {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+.lst-dep table th .free {
+    font-weight: 400;
+    font-size: 35px;
+}
+.lst-dep table th p {
+    font-weight: normal;
+    text-align: center;
+    color: #888888;
+    font-size: 16px;
+    margin: 0;
+}
+.lst-dep table tbody tr:nth-child(even) {
+    background: #fbfbfb;
+}
+.lst-dep table th .item {
+    padding: 10px 5px;
+}
+/*box 3*/
+.lst-qestion .title-ques {
+    font-size: 20px;
+}
+.lst-qestion p, strong {
+    font-size: 14px;
+}
+.lst-qestion .col-12 {
+    margin-bottom: 50px;
+}
+.lst-qestion strong {
+    font-weight: bold;
+}
+.lst-qestion p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+/*button link*/
+.btn-link {
+    display: block;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 25px;
+    color: #3bafee;
+    margin-bottom: 50px;
+}
+/* button call */
+.hotline {
+    height: 45pt;
+    border-radius: 30px;
+    background: #f5f5f5;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
+    position: fixed;
+    z-index: 9999;
+    right: 18pt;
+    bottom: 72pt;
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    width: 45pt;
+}
+.hotline img {
+    width: 100%;
+	transition: all 1s;
+}
+.hotline:hover img {
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+/*footer*/
+footer {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 150px 50px 50px;
+}
+footer .wrap {
+    background: #000;
+}
+.title-list a {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+a {
+    cursor: pointer;
+    color: #10aae4;
+    text-decoration: none !important;
+}
+footer .wrap nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 20px;
+}
